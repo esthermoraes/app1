@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class NextActivity extends AppCompatActivity /*Uma herança onde a NextActivity herda as */{
+public class NextActivity extends AppCompatActivity /*Uma herança entre NextActivity (tela "herdeira") da AppCompatActivity (tela "pai")*/{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
