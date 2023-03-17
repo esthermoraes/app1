@@ -11,10 +11,10 @@ public class NextActivity extends AppCompatActivity /*Uma herança entre NextAct
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_next);
+        setContentView(R.layout.activity_next); //Uso do metodo para ligação entre a view e a activity
         Intent i = getIntent();
         String textoDigitado = i.getStringExtra("texto");
-        TextView tvTexto = findViewById(R.id.tvTexto);
+        TextView tvTexto = findViewById(R.id.tvTexto);//Uso do método findViewById para a localização do TextView
         tvTexto.setText(textoDigitado);
     }
 }

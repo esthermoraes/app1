@@ -1,5 +1,5 @@
 package nascimento.moraes.esther.app1;
-// importando xxxx
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText editText = findViewById(R.id.etDigiteAqui); //Uso do método findViewByld para localizar a EditText através do id
                 String textoDigitado = editText.getText().toString(); //Retorna a informação digitada e "coletada" no/do EditText em forma de String
                 Intent i = new Intent(MainActivity.this,NextActivity.class); //Definição do componente que deve ser chamado pelo sistema
-                i.putExtra("texto", textoDigitado); //
+                i.putExtra("texto", textoDigitado);
                 startActivity(i);
             }
         });
